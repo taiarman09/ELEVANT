@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header nav{
+    width: 100%;
+    height: 120px;
+    background-color: rgb(241, 250, 240);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav img{
+    height: 100%;
+    width: 200px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul li a:hover{
+    color: rgb(134, 217, 184);
+}
+
+:active{
+    color: rgb(134, 217, 184);
+}
+
+.searchbar{
+    position: relative;
+}
+
+.searchbar input{
+    width: 300px;
+    height: 40px;
+    padding-left: 20px;
+    border-radius: 30px;
+    background-color: rgb(214, 214, 214);
+    border: none;
+}
+
+.searchbar input::placeholder{
+    color: white;
+    font-size: 15px;
+}
+
+.searchbar i{
+    position: absolute;
+    left: 90%;
+    top: 12px;
+}
+
+.menu{
+    display: none;
+}
+
+/* section css */
+
+.naxt-carrer{
+    height: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.box-container{
+    width: 45%;
+    height: 100%;
+    color: black;
+}
+
+.box-container h1{
+    font-size: 50px;
+    width: 60%;
+    height: auto;
+    color: black;
+    margin-left: 25%;
+    margin-top: 150px;
+}
+
+.box-container p{
+    font-size: 20px;
+    text-align: center;
+    width: 59%;
+    height: auto;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+}
+
+.start-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    font-size: 20px;
+    background-color: rgb(134, 217, 184);
+    margin: auto;
+    margin-top: 30px;
+    height: 50px;
+    border: none;
+    font-weight: bold;
+}
+
+.box-container img{
+    width: 80%;
+    height: 90%;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.image-center{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1500px){
+    .box-container h1{
+        font-size: 40px;
+        margin-top: 100px;
+        margin-left: 22%;
+    }
+    .naxt-carrer{
+        height: 500px;
+    }
+    .box-container p{
+        font-size: 17px;
+    }
+}
+
+@media(max-width:1250px){
+    .box-container h1{
+        font-size: 33px;
+        margin-top: 80px;
+        margin-left: 22%;
+    }
+    .naxt-carrer{
+        height: 400px;
+    }
+    .box-container p{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:1150px){
+    nav ul{
+        gap: 30px;
+    }
+    .searchbar input{
+        width: 250px;
+    }
+    .searchbar i{
+        left: 85%;
+    }
+    .box-container p{
+        font-size: 13px;
+        width: 70%;
+    }
+    .box-container h1{
+        font-size: 28px;
+        margin-left: 20%;
+        margin-top: 60px;
+    }
+    .naxt-carrer{
+        height: 350px;
+    }
+}
+
+@media(max-width: 950px){
+    nav ul{
+        gap: 20px;
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+    .searchbar input{
+        width: 250px;
+        height: 30px;
+    }
+    .searchbar i{
+        top: 8px;
+    }
+    header nav{
+        height: 70px;
+    }
+    header nav img{
+        width: 100px;
+    }
+    .box-container h1{
+        font-size: 25px;
+        margin: auto;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .naxt-carrer{
+        height: 250px;
+    }
+    .box-container p{
+        margin-top: 10px;
+        width: 70%;
+        font-size: 12px;
+    }
+    .start-btn{
+        font-size: 15px;
+        width: 100px;
+        height: 40px;
+        margin-top: 10px;
+    }
+    
+}
+
+@media(max-width:820px){
+    .box-container h1{
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .box-container p{
+        font-size: 10px;
+    }
+    .start-btn{
+        font-size: 10px;
+        width: 70px;
+        height: 30px;
+    }
+    .naxt-carrer{
+        height: 200px;
+    }
+}
+
+
+@media(max-width:750px){
+    nav ul li a{
+        font-size: 10px;
+    }
+    .searchbar input{
+        width: 200px;
+        height: 20px;
+        padding-left: 10px;
+    }
+    .searchbar input::placeholder{
+        font-size: 12px;
+    }
+    .searchbar i{
+        font-size: 10px;
+        top: 7px;
+        left: 90%;
+    }
+}
+
+@media(max-width:650px){
+    .searchbar  input{
+        width: 130px;
+    }
+    .searchbar i{
+        left: 82%;
+        top: 7px;
+    }
+    .searchbar input::placeholder{
+        font-size: 10px;
+    }
+    .box-container h1{
+        font-size: 15px;
+    }
+    .box-container p{
+        font-size: 7px;
+        margin-top: 5px;
+    }
+    .start-btn{
+        font-size: 8px;
+        width: 50px;
+        height: 20px;
+    }
+    .naxt-carrer{
+        height: 150px;
+    }
+}
+
+@media(max-width:500px){
+    nav ul{
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+        top: 50px;
+        left: 0;
+        background-color: rgb(241, 250, 240);
+        gap: 0px;
+    }
+    nav ul li{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 100%;
+    }
+    header nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 50px;
+    }
+    header nav img{
+        width: 70px;
+    }
+    .menu{
+        display: block;
+        border: 2px solid black;
+        padding: 5px;
+        font-size: 15px;
+        border-radius: 5px;
+        margin-left: 30px;
+        position: relative;
+    }
+    .box-container{
+        width: 50%;
+    }
+    .box-container h1{
+        width: 100%;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    .box-container p{
+        width: 80%;
+    }
+    .naxt-carrer{
+        height: 120px;
+    }
+    .start-btn{
+        font-size: 5px;
+        width: 40px;
+        margin-top: 5px;
+    }
+}
+
+
+
+
+@media(max-width:320px){
+    .menu{
+        margin-left: 20px;
+    }
+    .searchbar input{
+        width: 100px;
+    }
+    header nav{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
