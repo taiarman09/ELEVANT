@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- META TAGS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITLE -->
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FONT AWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- STYLE LINK -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+    <!-- ===================== HEADER START ===================== -->
     <header>
         <nav>
             <img src="image/logo.png" alt="">
+
+            <!-- NAV MENU -->
             <ul id="menuList">
                 <li><a href="" style="color: rgb(134, 217, 184);">Home</a></li>
                 <li><a href="">About Us</a></li>
@@ -19,69 +33,103 @@
                 <li><a href="">Contact</a></li>
                 <li><a href="">Service</a></li>
             </ul>
+
+            <!-- SEARCH BAR -->
             <div class="searchbar">
-                <input type="text" name="" id="" placeholder="Search">
+                <input type="text" placeholder="Search">
                 <i class="fa-solid fa-magnifying-glass" style="color: #335b88;"></i>
             </div>
+
+            <!-- MENU ICON FOR MOBILE -->
             <div class="menu" onclick="menubar()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
     </header>
+    <!-- ===================== HEADER END ===================== -->
 
 
+    <!-- ===================== HERO SECTION START ===================== -->
     <main class="naxt-carrer">
-            <div class="box-container">
+        <div class="box-container">
+            <h1>Your <span style="color: rgb(134, 217, 184);">Next Career</span> <br> Milestone Start Now</h1>
 
-                <h1>Your <span style="color: rgb(134, 217, 184);">Next Career</span> <br> Milestone Start Now</h1>
-                <p>Join the e-learning platform that moves at your speed  Get certified, gain real-world acumen, and validate your expertise on your own schedule.</p>
-                <button class="start-btn">START NOW</button>
-            </div>
+            <p>
+                Join the e-learning platform that moves at your speed.
+                Get certified, gain real-world acumen, and validate your expertise on your own schedule.
+            </p>
 
-            <div class="box-container image-center">
-                <img src="./image/table-img.jpg" alt="">
-            </div>
+            <button class="start-btn">START NOW</button>
+        </div>
+
+        <div class="box-container image-center">
+            <img src="./image/table-img.jpg" alt="">
+        </div>
     </main>
+    <!-- ===================== HERO SECTION END ===================== -->
 
+
+    <!-- ===================== COURSES SECTION START ===================== -->
     <main class="box-main-courses">
         <h1>Explore Top Courses categories</h1>
-        <button class="start-btn">All Categories</button>
-        <div class="d-grid">
+
+        <button class="start-btn" id="all">All Categories</button>
+
+        <div class="d-flex">
+
+            <!-- CATEGORY BOXES -->
             <div class="box">
                 <img src="./image/marketing-removebg-preview.png" alt="">
                 <div class="box-title">Marketing</div>
                 <div class="box-secound">3 course (s)</div>
             </div>
+
             <div class="box">
                 <img src="./image/computor-removebg-preview.png" alt="">
                 <div class="box-title">Computer Science</div>
                 <div class="box-secound">3 course (s)</div>
             </div>
+
             <div class="box">
                 <img src="./image/en-removebg-preview.png" alt="">
                 <div class="box-title">English Learning</div>
                 <div class="box-secound">3 course (s)</div>
             </div>
+
             <div class="box">
                 <img src="./image/ai-removebg-preview.png" alt="">
                 <div class="box-title">Fundamental Marketing</div>
                 <div class="box-secound">3 course (s)</div>
             </div>
+
             <div class="box">
                 <img src="./image/pen-removebg-preview.png" alt="">
                 <div class="box-title">Design</div>
                 <div class="box-secound">3 course (s)</div>
             </div>
+
             <div class="box">
                 <img src="./image/up-removebg-preview.png" alt="">
                 <div class="box-title">Business & Finance</div>
                 <div class="box-secound">3 course (s)</div>
             </div>
-            
+
         </div>
     </main>
-    
+    <!-- ===================== COURSES SECTION END ===================== -->
 
+
+    <main class="box-main-courses" style="background-color: white;">
+        <h1>View Our <span>Courses Offerings</span></h1>
+
+        
+
+        
+    </main>
+
+    <!-- SCRIPT FILE -->
     <script src="script.js"></script>
+
 </body>
+
 </html>

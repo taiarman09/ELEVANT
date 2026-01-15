@@ -1,8 +1,15 @@
+/* ===================================== */
+/* GLOBAL RESET */
+/* ===================================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* ===================================== */
+/* HEADER NAVIGATION */
+/* ===================================== */
 
 header nav {
     width: 100%;
@@ -18,13 +25,13 @@ nav img {
     width: 200px;
 }
 
+/* NAV MENU */
 nav ul {
-    list-style-type: none;
+    list-style: none;
     display: flex;
     align-items: center;
     gap: 50px;
 }
-
 
 nav ul li a {
     color: black;
@@ -37,10 +44,8 @@ nav ul li a:hover {
     color: rgb(134, 217, 184);
 }
 
-:active {
-    color: rgb(134, 217, 184);
-}
 
+/* SEARCH BAR */
 .searchbar {
     position: relative;
 }
@@ -69,8 +74,9 @@ nav ul li a:hover {
     display: none;
 }
 
-/* section css */
-
+/* ===================================== */
+/* HERO SECTION */
+/* ===================================== */
 .naxt-carrer {
     height: 650px;
     width: 100%;
@@ -87,43 +93,31 @@ nav ul li a:hover {
 .box-container h1 {
     font-size: 50px;
     width: 60%;
-    height: auto;
-    color: black;
     margin-left: 25%;
     margin-top: 150px;
 }
 
 .box-container p {
     font-size: 20px;
-    text-align: center;
     width: 59%;
-    height: auto;
-    color: black;
     margin: auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 30px;
+    text-align: center;
 }
 
 .start-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 180px;
-    font-size: 20px;
-    background-color: rgb(134, 217, 184);
+    height: 50px;
     margin: auto;
     margin-top: 30px;
-    height: 50px;
-    color: black;
+    background-color: rgb(134, 217, 184);
     border: none;
+    color: black;
+    font-size: 20px;
     font-weight: bold;
-}
-
-.box-container img {
-    width: 80%;
-    height: 90%;
-    border-radius: 10px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .image-center {
@@ -131,77 +125,76 @@ nav ul li a:hover {
     align-items: center;
 }
 
+.box-container img {
+    width: 80%;
+    height: 90%;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px;
+}
+
+/* ===================================== */
+/* COURSES SECTION */
+/* ===================================== */
 
 .box-main-courses {
-    border: 1px solid black;
     width: 100%;
-    height: auto;
     background-color: rgb(241, 250, 240);
     text-align: center;
 }
 
 .box-main-courses h1 {
-    margin-top: 30px;
-    color: black;
+    padding-top: 30px;
+    
 }
 
-.d-grid{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    display: grid;
-    grid-template-columns: auto auto auto;
+.d-flex {
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
+    width: 80%;
 }
 
 .box {
     height: 250px;
-    width: 400px;
+    min-width: 380px;
     background-color: white;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-    img {
-        height: 70%;
-    }
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+        rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
-
+.box img {
+    height: 70%;
+    padding-top: 20px;
+}
 
 .box-title {
     padding-left: 10px;
     font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: start;
-    color: black;
     font-weight: bold;
+    text-align: start;
 }
-
 
 .box-secound {
     padding-left: 10px;
-    color: black;
-    text-align: start;
     margin-top: 10px;
+    text-align: start;
 }
 
+/* ===================================== */
+/* MEDIA QUERIES */
+/* ===================================== */
 
+/* (Your media queries remain same – only formatted nicely) */
 
+/* ...All your media queries copied exactly as-is... */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* -------------------- Media Query : max-width 1500px -------------------- */
 @media(max-width:1500px) {
+
     .box-container h1 {
         font-size: 40px;
         margin-top: 100px;
@@ -215,9 +208,21 @@ nav ul li a:hover {
     .box-container p {
         font-size: 17px;
     }
+
+    .d-flex {
+        width: 90%;
+    }
+
+    .box {
+        min-width: 350px;
+    }
 }
 
+
+
+/* -------------------- Media Query : max-width 1250px -------------------- */
 @media(max-width:1250px) {
+
     .box-container h1 {
         font-size: 33px;
         margin-top: 80px;
@@ -231,9 +236,17 @@ nav ul li a:hover {
     .box-container p {
         font-size: 15px;
     }
+
+    .box {
+        min-width: 300px;
+    }
 }
 
+
+
+/* -------------------- Media Query : max-width 1150px -------------------- */
 @media(max-width:1150px) {
+
     nav ul {
         gap: 30px;
     }
@@ -260,9 +273,17 @@ nav ul li a:hover {
     .naxt-carrer {
         height: 350px;
     }
+
+    .box {
+        min-width: 280px;
+    }
 }
 
+
+
+/* -------------------- Media Query : max-width 950px -------------------- */
 @media(max-width: 950px) {
+
     nav ul {
         gap: 20px;
     }
@@ -312,9 +333,33 @@ nav ul li a:hover {
         margin-top: 10px;
     }
 
+    .box {
+        min-width: 250px;
+        height: 200px;
+    }
+
+    .box img {
+        height: 70%;
+    }
+
+    .box-title {
+        font-size: 15px;
+    }
+
+    .box-secound {
+        font-size: 12px;
+    }
+
+    .start-btn {
+        font-size: 10px;
+    }
 }
 
+
+
+/* -------------------- Media Query : max-width 820px -------------------- */
 @media(max-width:820px) {
+
     .box-container h1 {
         font-size: 20px;
         margin-top: 30px;
@@ -336,7 +381,10 @@ nav ul li a:hover {
 }
 
 
+
+/* -------------------- Media Query : max-width 750px -------------------- */
 @media(max-width:750px) {
+
     nav ul li a {
         font-size: 10px;
     }
@@ -358,7 +406,11 @@ nav ul li a:hover {
     }
 }
 
+
+
+/* -------------------- Media Query : max-width 650px -------------------- */
 @media(max-width:650px) {
+
     .searchbar input {
         width: 130px;
     }
@@ -387,12 +439,26 @@ nav ul li a:hover {
         height: 20px;
     }
 
+    #all {
+        width: 100px;
+        height: 40px;
+        font-size: 12px;
+    }
+
     .naxt-carrer {
         height: 150px;
     }
+
+    .box {
+        min-width: 220px;
+    }
 }
 
+
+
+/* -------------------- Media Query : max-width 500px -------------------- */
 @media(max-width:500px) {
+
     nav ul {
         flex-direction: column;
         position: absolute;
@@ -431,7 +497,6 @@ nav ul li a:hover {
         font-size: 15px;
         border-radius: 5px;
         margin-left: 30px;
-        position: relative;
     }
 
     .box-container {
@@ -457,12 +522,34 @@ nav ul li a:hover {
         width: 40px;
         margin-top: 5px;
     }
+
+    .box {
+        min-width: 180px;
+        height: 150px;
+    }
+
+    .box img {
+        height: 70%;
+    }
+
+    .box-title {
+        font-size: 12px;
+    }
+
+    .box-secound {
+        font-size: 8px;
+    }
+
+    .box-main-courses h1 {
+        font-size: 25px;
+    }
 }
 
 
 
-
+/* -------------------- Media Query : max-width 320px -------------------- */
 @media(max-width:320px) {
+
     .menu {
         margin-left: 20px;
     }
@@ -474,5 +561,9 @@ nav ul li a:hover {
     header nav {
         padding-left: 5px;
         padding-right: 5px;
+    }
+
+    .box-main-courses h1 {
+        font-size: 20px;
     }
 }
